@@ -1,0 +1,183 @@
+﻿
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Кабинет</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="description" name="description">
+    <!-- Favicons -->
+    <link href="img/logo.png" rel="icon">
+    <!-- Normalize CSS File -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script language='JavaScript' type='text/javascript'>
+    document.Popup = function() { Popup() };
+
+    function Popup() {
+        showErrorPopup()
+    }
+    document.endPopup = function() { endPopup() };
+
+    function endPopup() {
+        hideErrorPopup()
+    }
+    </script>
+</head>
+
+<body class="body cab">
+    <section class="main">
+        <div class="container">
+            <a class="main__img-wr" href="#">
+                <img src="img/photo1.png" alt="" class="main__img">
+            </a>
+           <div class="main__group">
+                <div class="main__group__item">
+                   <div class="main__box personal-box">
+                        <div class="main__box__item">
+                            <img src="img/support.png" class="main__box__icon">
+                            <div class="main__box__title">Готов к работе</div>
+                        </div>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" value="value-2" id="check2" >
+                          <span>
+                            <span class="circle" href="checkbox1" ></span>
+                          </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="main__group__item">
+                    <div class="main__group__title">Диалоги</div>
+                    <a href="transaction" class="main__box">
+                        <div class="main__box__item">
+                            <img src="img/telegram.png" class="main__box__icon">
+                            <div class="main__box__title">Диалог №1</div>
+                        </div>
+                       
+                        <img src="img/arrow-gray.png" class="main__box__arrow">
+                    </a>
+                    <a href="transaction" class="main__box disable">
+                        <div class="main__box__item">
+                            <img src="img/telegram.png" class="main__box__icon">
+                            <div class="main__box__title">Диалог №2</div>
+                        </div>
+                        
+                        <img src="img/arrow-gray.png" class="main__box__arrow">
+                    </a>
+					<a href="transaction" class="main__box">
+                        <div class="main__box__item">
+                            <img src="img/telegram.png" class="main__box__icon">
+                            <div class="main__box__flex">
+                                <div class="flex">
+                                    <div class="main__box__title">Диалог №3</div>
+                                    <div class="main__box__number show"><span>1</span></div>
+                                </div>
+                                <div class="main__box__subtitle">Текст текст текст текст</div>
+                            </div>
+                        </div>
+                        <div class="main__box__right">
+                            <div class="main__box__time">11:24</div>
+                            <img src="img/arrow-gray.png" class="main__box__arrow">
+                        </div>
+                    </a>
+                </div>
+<a href="discounts" class="main__box">
+                        <div class="main__box__item">
+                            <img src="img/logo1.png" class="main__box__icon">
+                            <div class="main__box__title">Перейти к мониторингу оборудования</div>
+                        </div>
+                        <img src="img/arrow-gray.png" class="main__box__arrow">
+                    </a>
+                    <a href="exit_to_start" class="main__box">
+                        <div class="main__box__item">
+                            <img src="img/exit.png" class="main__box__icon">
+                            <div class="main__box__title">Выход</div>
+                        </div>
+                        <img src="img/arrow-gray.png" class="main__box__arrow">
+                    </a>
+                <div class="main__group__item">
+                    <a href="#" class="cant-login">Не можете войти?</a>
+                    <div class="version">Версия <span class="vers"></span>1.12.13</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="main">
+        <div class="container">
+            <div class="main__blank__text2">
+                На указанный номер придет СМС-код для подтверждения входа в Личный кабинет.
+            </div>
+            <div class="main__auth">
+                <div class="main__auth__title">Введите номер телефона</div>
+                <form class="main__auto__form" method="post" action="auth">
+                    <div class="main__auto__flex">
+                        <input type="tel" class="main__auth__input" required placeholder="+7" id="phone" name="phone">
+                        <a href="auth" class="main__btn disabled">
+                            <img src="img/arrow.png" class="main__btn__icon show">
+                            <img src="img/loading.gif" class="main__loading">
+                        </a>
+                    </div>
+                </form>
+                <div class="main__auth__error">Попробуйте позже.</div>	
+            </div>
+           <div class="agree">
+                <div class="agree__flex">
+                    <input type="checkbox" class="agree__flex__input">
+                    <div class="agree__flex__title">Я согласен с условиями <a href="information_1">Публичной оферты</a>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </section>
+
+<section class="personal">
+      <div class="personal__box">
+        <div class="personal__title">Личные данные</div>
+        <div class="personal__line">
+          <div class="personal__left">Телефон</div>
+          <div class="personal__right"><a href="telephone" class="personal__link">+77000000000</a></div>
+        </div>
+        <div class="personal__line">
+          <div class="personal__left">E-mail</div>
+          <div class="personal__right"><a href="mail" class="personal__link">mail@mail.ru</a></div>
+        </div>
+      </div>
+      <div class="personal__box">
+        <div class="personal__title">Уведомление</div>
+        <div class="personal__line">
+          <div class="personal__left">Включить/выключить уведомления</div>
+          <div class="personal__right">
+            <label class="custom-checkbox">
+              <input type="checkbox" value="value-1" id="check1" >
+              <span>
+                <span class="circle" href="checkbox1" ></span>
+              </span>
+            </label>
+          </div>
+        </div>
+        
+  </section>
+
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+    <section class="error__popup-wr">
+        <div class="container">
+            <div class="error__popup">Ошибка соединения. Повторите попытку...</div>
+        </div>
+    </section>
+    <!-- Masked Input -->
+    <script src="lib/maskinput/jquery.maskedinput.min.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
